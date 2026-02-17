@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvFeedbackTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Your Feedback"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate your experience:"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments (Optional):"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <com.example.onlinemovieticket.components.CustomEditText
+        android:id="@+id/etFeedbackComment"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Share your thoughts about the booking experience..."
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="32dp" />
+
+    <com.example.onlinemovieticket.components.CustomButton
+        android:id="@+id/btnSubmitFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Feedback"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnSkipFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/darker_gray" />
+
+</LinearLayout>
